@@ -15,13 +15,13 @@ const submit = document.getElementById('submit');
 let str;
 let num;
 add1.addEventListener('click', function(){
-    cart = cart +1;
+    cart += 1;
 })
 add2.addEventListener('click', function(){
-    cart = cart +2;
+    cart += 2;
 });
 add3.addEventListener('click', function(){
-    cart = cart+3;
+    cart += 3;
 });
 reset.addEventListener('click', function(){
     cart = 0;
@@ -30,7 +30,7 @@ submit.addEventListener('click', function(){
     str = document.getElementById('input').value;
     num = + str;
     if (!isNaN(num) && num !== ''){
-        cart = cart + num;
+        cart += num;
     }else{
         alert('only numbers are allowed');
     }
