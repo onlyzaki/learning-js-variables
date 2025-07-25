@@ -15,7 +15,7 @@ const submit = document.getElementById('submit');
 let str;
 let num;
 add1.addEventListener('click', function(){
-    cart += 1;
+    cart ++;
 })
 add2.addEventListener('click', function(){
     cart += 2;
